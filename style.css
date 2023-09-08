@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.contaner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/background.png);
+  background-size: cover;
+  background-position: center;
+
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.logo {
+  width: 160px;
+  height: 90%;
+}
+.card {
+  width: 30px;
+  margin-right: 5%;
+}
+ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+ul li a {
+  font-size: 25px;
+  color: azure;
+  text-decoration: none;
+  position: relative;
+  transition: 0.6s;
+}
+
+ul li a::after {
+  content: "";
+  width: 0;
+  left: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: -20%;
+  transition: .4s all linear;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+.content-text {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+}
+.content-text h1 {
+  font-size: 190px;
+  line-height: 150px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #fff;
+  background-image: url(images/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: bag 20s linear infinite;
+}
+
+@keyframes bag {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.content-text h3 {
+  font-size: 40px;
+  color: rgb(193, 190, 190);
+}
+.content-text button {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 5px 5px;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+}
+.icons {
+  width: 50px;
+  height: 200px;
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 1s;
+  z-index: 10;
+}
+.icons img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icons img:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bobbls {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bobbls .a {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  bottom: -50%;
+  animation: up 5s linear infinite;
+}
+
+.bobbls .b {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  bottom: -50%;
+  animation: up 4s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.bobbls .c {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: -50%;
+  animation: up 3s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.bobbls .d {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: -50%;
+  animation: up 2s linear infinite;
+  animation-delay: 0.1s;
+}
+
+.bobbls .e {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: -50%;
+  animation: up 5s linear infinite;
+}
+
+.bobbls .f {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: -50%;
+  animation: up 4s linear infinite;
+ 
+}
+
+.bobbls .g {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: -50%;
+  animation: up 3s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes up {
+  to {
+    bottom: 60%;
+  }
+}
